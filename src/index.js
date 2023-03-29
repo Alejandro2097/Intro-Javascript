@@ -9,8 +9,8 @@ const nombreCompleto = `${nombre} ${apellido}`;
 
 console.log(nombreCompleto);
 
-function getSaludo() {
-    return 'Hola mundo'
+function getSaludo(nombre) {
+    return 'Hola '  + nombre
 }
 
-console.log(`Este es un texto de saludo ${getSaludo()}`)
+console.log(`Este es un texto de saludo ${getSaludo('Aleja')}`)
