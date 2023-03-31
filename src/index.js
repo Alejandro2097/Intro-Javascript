@@ -1,5 +1,8 @@
 // Funciones en JS
 
-function saludar(nombre) {
+const saludar = function(nombre) {
     return `Hola, ${nombre}`;
 }
+
+
+console.log(saludar);
