@@ -7,7 +7,10 @@ const saludar2 = (nombre) => {
     return `Hola, ${nombre}`;
 }
 
-const saludar3 = (nombre) => {
-    return `Hola, ${nombre}`;
-}
-console.log(saludar2);
+const saludar3 = (nombre) =>  `Hola, ${nombre}`;
+
+const saludar4 = () =>  `Hola, Mundo`;
+
+console.log(saludar2('Goku'));
+console.log(saludar3('Vegueta'));
+console.log(saludar4());
