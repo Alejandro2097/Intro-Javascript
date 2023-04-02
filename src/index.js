@@ -16,8 +16,7 @@ const {nombre, edad, clave} = persona;
 // console.log(edad);
 // console.log(clave);
 
-const retornaPersona = (usuario) => {
-    const {nombre, edad, clave} = persona;
+const retornaPersona = ({nombre, edad, clave, rango = 'capitan'}) => {
     console.log(nombre, edad, clave);
 }
 
