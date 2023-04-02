@@ -12,6 +12,13 @@ const persona = {
 
 const {nombre, edad, clave} = persona;
 
-console.log(nombre);
-console.log(edad);
-console.log(clave);
+// console.log(nombre);
+// console.log(edad);
+// console.log(clave);
+
+const retornaPersona = (usuario) => {
+    const {nombre, edad, clave} = persona;
+    console.log(nombre, edad, clave);
+}
+
+retornaPersona(persona);
