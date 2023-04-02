@@ -21,10 +21,15 @@ const Context = ({nombre, edad, clave, rango = 'capitan'}) => {
     //console.log(nombre, edad, clave);
     return {
         nombreClave: clave,
-        anios: edad
+        anios: edad,
+        lating: {
+            lat: 14.1214,
+            lng: 131923
+        }
     }
 }
 
-const {nombreClave, anios} = Context(persona);
+const {nombreClave, anios, lating:{lat, lng}} = Context(persona);
 
 console.log(nombreClave, anios);
+console.log(lat, lng)
