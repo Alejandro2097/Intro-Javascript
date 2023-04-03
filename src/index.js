@@ -6,3 +6,7 @@ const getHeroesById = (id) => {
 }
 
 console.log(getHeroesById(2));
+
+const getHeroesByOwner = (owner) => heroes.filter((heroe) => heroe.owner === owner )
+
+console.log(getHeroesByOwner('DC'));
