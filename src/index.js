@@ -1,8 +1,14 @@
+import { getHeroesById } from "./bases/08-im-exp";
 
 
 const promesa = new Promise((resolve, reject) => {
     setTimeout(() => {
-        resolve();
+
+        // Tarea 
+        // importen el
+        const heroe = getHeroesById(2);
+        console.log(heroe);
+        // resolve();
     }, 2000);
     
 });
