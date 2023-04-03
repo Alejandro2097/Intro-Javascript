@@ -7,13 +7,13 @@ const promesa = new Promise((resolve, reject) => {
         // Tarea 
         // importen el
         const heroe = getHeroesById(2);
-        console.log(heroe);
+        resolve(heroe);
         // resolve();
     }, 2000);
     
 });
 
 
-promesa.then(() => {
-    console.log('Then de la promesa')
-})
+promesa.then((heroe) => {
+    console.log('Heroe', heroe)
+}).catch(err => console.warn(err));
